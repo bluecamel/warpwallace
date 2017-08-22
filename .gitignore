@@ -1,0 +1,6 @@
+.idea
+*.log
+.vscode
+
+build
+node_modules

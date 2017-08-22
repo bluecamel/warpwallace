@@ -1,0 +1,32 @@
+{
+  "name": "warpwallace",
+  "version": "0.0.1",
+  "description": "Guesses warpwallet addresses.",
+  "main": "build/app.js",
+  "scripts": {
+    "prebuild": "npm install",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node build/app.js",
+    "go": "npm run build && node build/app.js"
+  },
+  "author": "Branton Davis <bluecamel@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "keybase-bitcoin": "0.0.0",
+    "triplesec": "^3.0.25"
+  },
+  "devDependencies": {
+    "ts-node": "2.1.0",
+    "@types/config": "0.0.32",
+    "@types/node": "7.0.5",
+    "typescript": "^2.4.1"
+  },
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bluecamel/warpwallace.git"
+  }
+}
